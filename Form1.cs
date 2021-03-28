@@ -10,11 +10,16 @@ using System.Windows.Forms;
 
 namespace Project
 {
-    public partial class Form1 : Form
+    public partial class ShoppingCart : Form
     {
-        public Form1()
+        public ShoppingCart()
         {
             InitializeComponent();
+        }
+
+        private void Form1_Paint(object sender, PaintEventArgs e)
+        {
+            orderInfo.Visible = DB.cartItems();
         }
     }
 }
