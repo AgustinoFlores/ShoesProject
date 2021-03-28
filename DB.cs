@@ -12,6 +12,7 @@ namespace Project
 
         public static Boolean cartItems()
         {
+            int x = 1;
             return cartHasItems;
         }
     }
